@@ -1,3 +1,11 @@
+/*Versión PP.
+var computadores = [];
+for(var i = 0; i < productos.length; i++){
+	if(productos[i].tipo == "computador"){
+		computadores.push(productos[i]);
+	}
+}*/
+
 var productos = [
 {
 	nombre: "pijama",
@@ -25,18 +33,9 @@ var productos = [
 ];
 
 
+//Versión PF.
 var computadores = productos.filter(function(cv){
 	return cv.tipo === "computador";
 });
 
 console.log(computadores);
-
-/*Versión PP.
-var computadores = [];
-for(var i = 0; i < productos.length; i++){
-	if(productos[i].tipo == "computador"){
-		computadores.push(productos[i]);
-	}
-}*/
-
-//Versión PF.
